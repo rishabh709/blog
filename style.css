@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #1a1a1a;
+
+}
+
+.navwrapper{
+    width: 100vw;
+    height: 9dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftNav, .rightNav{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    font-size: 1.2rem;
+    padding: 9px 30px;
+    border-radius: 7px;
+    /* color: white; */
+    color: #EF233C;
+    border: 1px solid #EF233C;
+    transition: all 0.3s ease-out;
+}
+.contact:hover{
+    background-color: #EF233C;
+    color: #fff;
+    /* background-color: #2B2D42; */
+    /* color: #EF233C; */
+}
+
+nav{
+    width: 50vw;
+    height: 5dvh;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 1.3rem;
+
+    border-radius: 21px;
+    /* background-color: #94ec65; */
+    /* border: 1px solid #96f57b; */
+    background-color: #2B2D42;
+
+    color: #8d99ae;
+}
+nav div{
+    width: 100px;
+    text-align: center;
+
+    transition: scale 0.2s ease-out;
+}
+
+nav div:hover{
+    scale: 120%;
+    color: white;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+
+.herosection{
+    position: absolute;
+    margin-top: 30vh;
+
+    width: 100%;
+    height: 60dvh;
+    overflow: hidden;
+    /* background-color: red; */
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    /* justify-content: flex-end; */
+}
+
+.herosection > img{
+    max-width: 100vw;
+    /* background-image: linear-gradient(); */
+    background: linear-gradient(#ffffff00, #3931d1cd);
+}
+
+nav :nth-child(2){
+    color: white;
+}
+
+.heroMsg{
+    position: relative;
+    z-index: 2;
+
+    margin-top: 17vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* background-color: #2b2d4277; */
+}
+.tagline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    /* font-size: 80px; */
+    color: #fff;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.callToAction{
+    /* width: 250px;
+    height: 70px; */
+
+    margin-top: 1.5vh;
+    padding: 15px 40px;
+    font-size: 3rem;
+    background-color: #fff;
+    color: rgb(43, 1, 82);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    box-shadow: 0 0 20px;
+
+    transition: scale 0.3s ease-out;
+    cursor: pointer;
+}
+
+.callToAction:hover{
+    scale: 120%;
+}
